@@ -59,7 +59,7 @@ class GeolocationMarker extends google.maps.MVCObject {
        'optimized': false,
        'position': new google.maps.LatLng(0, 0),
        'title': 'Current location',
-       'zIndex': 2
+       'zIndex': google.maps.Marker.MAX_ZINDEX+2
      };
 
      if(opt_markerOpts) {
@@ -74,7 +74,7 @@ class GeolocationMarker extends google.maps.MVCObject {
        'fillColor': '61a0bf',
        'fillOpacity': .4,
        'strokeWeight': 1,
-       'zIndex': 1
+       'zIndex': google.maps.Marker.MAX_ZINDEX+1
      };
 
      if(opt_circleOpts) {
